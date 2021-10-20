@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-upload",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "description": "upload & publish extensions to the Chrome Web Store",
   "main": "lib/main.js",
@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.ts",
     "pack": "ncc build",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run pack"
+    "all": "npm run build && npm run pack"
   },
   "repository": {
     "type": "git",
