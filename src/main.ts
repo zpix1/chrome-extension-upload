@@ -7,11 +7,11 @@ function uploadFile(webStore: any, filePath: string): void {
   webStore
     .uploadExisting(myZipFile)
     .then((uploadRes: any) => {
-      core.debug(uploadRes)
+      core.error(uploadRes)
       webStore
         .publish()
         .then((publishRes: any) => {
-          core.debug(publishRes)
+          core.error(publishRes)
         })
         .catch((e: any) => {
           core.error(e)
