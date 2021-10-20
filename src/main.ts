@@ -55,6 +55,7 @@ async function run(): Promise<void> {
       uploadFile(webStore, filePath)
     }
   } catch (error) {
+    console.log(error)
     core.setFailed(error.message)
   }
 }
